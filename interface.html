@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: calc(50% - 20px); 
+      margin: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    /* Profile styles */
+    .profile {
+      text-align: left;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .profile h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .profile p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .profile label {
+      font-weight: bold;
+    }
+
+    /* Message styles */
+    .message {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      display: none; 
+    }
+
+    
+    .product-container {
+      max-width: 800px; 
+      margin: auto;
+      padding: 20px;
+      text-align: center; 
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
+
+    @media screen and (max-width: 600px) {
+      .card {
+        width: calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile">
+  <h2>Account Details</h2>
+  <p><label>Username:</label> Shivamani</p>
+  <p><label>Email:</label> meelashivamani@gmail.com</p>
+</div>
+
+<div class="product-container">
+
+  <div class="card">
+    <img src="sh.jpeg" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Sports helmet..</p>
+    <p><button class="btnsuccess" id="addToCartBtn1">Add to Cart</button></p>
+  </div>
+
+  <div class="card">
+    <img src="shr.jpeg" alt="Tropical Printed Shirt" style="width:100%">
+    <h1>Shoes for men</h1>
+    <p class="price">$29.99</p>
+    <p>Sports shoes</p>
+    <p><button class="btnsuccess" id="addToCartBtn2">Add to Cart</button></p>
+  </div>
+
+  <div class="card">
+    <img src="prod2.jpeg" alt="Men Winter Fleece Lined Coat" style="width:100%">
+    <h1>Unisex shettle</h1>
+    <p class="price">$35.99</p>
+    <p>3+1 offer.</p>
+    <p><button class="btnsuccess" id="addToCartBtn3">Add to Cart</button></p>
+  </div>
+
+  <div class="card">
+    <img src="pk.jpeg" alt="Men Pierre Plus Lace-Up Shoes" style="width:100%">
+    <h1>Glouse for Men.</h1>
+    <p class="price">$15.99</p>
+    <p>Letter Glouses for men..</p>
+    <p><button class="btnsuccess" id="addToCartBtn4">Add to Cart</button></p>
+  </div>
+
+  
+</div>
+
+<script>
+  document.getElementById("addToCartBtn1").addEventListener("click", function() {
+    alert("Successfully added Tailored Jeans to cart");
+  });
+
+  document.getElementById("addToCartBtn2").addEventListener("click", function() {
+    alert("Successfully added Summer Shirt for Men to cart");
+  });
+
+  document.getElementById("addToCartBtn3").addEventListener("click", function() {
+    alert("Successfully added Winter Coat for Men to cart");
+  });
+  document.getElementById("addToCartBtn4").addEventListener("click", function() {
+    alert("Successfully added Winter Coat for Men to cart");
+  });
+</script>
+
+</body>
+</html>
